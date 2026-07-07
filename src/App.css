@@ -1,0 +1,276 @@
+
+body{
+  background-color:aqua;
+  height: 100%;
+  overflow: hidden;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+} 
+
+ .app{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+   width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto ;
+   
+ }
+ .crrr{
+  width: 50%;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+  overflow-y: auto;
+  margin-right: 0;
+ }
+ .slice{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 14px;
+ }
+ .botns{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 25px ;
+ }
+ .wite{
+  background-color: black;
+  color: white;
+  padding: 5px 2px;
+  border-radius: 15px;
+ }
+ .card{
+  width: 90%;
+  height: 100%;
+
+  
+  
+ }
+.prrr{
+  width: 50%;
+  height:600px;
+  margin: auto;
+}
+.inpuut{
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  /* margin-left: 20px; */
+  /* margin-top: 10px; */
+
+}
+  .search{
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 16px;
+    
+  }
+ .proser{
+width: 90%;
+height: 80%;
+margin: auto;
+overflow-y: auto;
+ }
+ .total{
+  
+  margin: 30px 0;
+
+
+ }
+ 
+ .mas{
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content:space-around;
+  flex-direction: row;
+  margin:40px auto;
+  gap: 10px;
+  width: 60%;
+
+ }
+ .ff{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+ }
+ 
+  .header{
+    width: 90%;
+    margin: 20PX auto;
+    background-color: blue;
+    color: white;
+    border-radius: 15PX;
+    padding: 10px 5px;
+    
+
+  }
+  .time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color:white;
+  }
+   .time span{
+    font-size: 20px;
+   }
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    
+  }
+  .header h2{
+    color: white;
+  }
+  .bi{
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    gap: 20px;
+    width: 30%;
+  }
+  .btn{
+     padding: 0px 20px;
+     font-size: 25px;
+    
+     margin: 5px 2px;
+  }
+   button{
+    background-color:blue;
+    color:white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    /* margin-bottom: 18px; */
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s ease;
+   }
+    button:hover{
+      background-color: rgb(111, 111, 214);
+      color: #000;
+    }
+    .play{
+       background-color: darkgray; 
+       height: 100%;
+       overflow-y: auto;
+       padding: 10px 5px;
+    }
+    hr{
+       margin: 15px 10px;
+    }
+    .hold{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      direction: rtl;
+    }
+    button{
+      transition: 0.7s ease;
+    }
+    button:hover{
+      background-color: rgb(65, 65, 223);
+    }
+     .hold span{
+      margin: 5px 0;
+      background-color: rgb(10, 10, 221);
+      border-radius: 10px;
+      padding: 5px 7px;
+      color: white;
+      width: fit-content;
+    }
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .invoice,
+  .invoice * {
+    visibility: visible;
+  }
+}
+@media print {
+  .product {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .invoice,
+  .invoice * {
+    visibility: visible;
+  }
+}
+@media print {
+  .product {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+}
+@media(max-width:380px) {
+  .mas{
+  
+  flex-direction: column;
+  }
+  .ff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: -5px;
+  }
+  .proser{
+    height: 70%;
+  }
+  .btn{
+    padding: 3px 9px;
+    margin:  2px 1px;
+    font-size: 20px;
+  }
+  button{
+    padding: 4px 7px;
+  }
+  .hold{
+    display: flex;
+    flex-direction: column;
+  }
+  .slice{
+    flex-direction: column;
+  }
+  .time{
+    gap: 14px;
+  }
+  .time span{
+    font-size: 15px;
+  }
+}
+
+
